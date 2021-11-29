@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_previews",
+  "info": {
+    "name": "User Preview"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Desc": {
+      "type": "text"
+    }
+  }
+}

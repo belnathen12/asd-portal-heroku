@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/user-previews",
+      "handler": "user-preview.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-previews/count",
+      "handler": "user-preview.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-previews/:id",
+      "handler": "user-preview.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/user-previews",
+      "handler": "user-preview.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/user-previews/:id",
+      "handler": "user-preview.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/user-previews/:id",
+      "handler": "user-preview.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
